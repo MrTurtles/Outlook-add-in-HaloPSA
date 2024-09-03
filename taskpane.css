@@ -1,0 +1,278 @@
+:root {
+    --background-color: #f4f4f4;
+    --container-background: white;
+    --input-background: #f9f9f9;
+    --input-border: #ccc;
+    --input-text-color: black;
+    --input-focus-border: #0078d4;
+    --button-background: #0078d4;
+    --button-hover: #005a9e;
+    --button-active: #004080;
+    --button-color: red;
+    --text-color: black;
+    --error-color: red;
+    --success-color: green;
+    --dropdown-background: white;
+    --dropdown-border: #ccc;
+    --dropdown-hover: #f1f1f1;
+}
+
+[data-theme="dark"] {
+    --background-color: #2e2e2e;
+    --container-background: #1e1e1e;
+    --input-background: #3c3c3c;
+    --input-border: #555;
+    --input-text-color: #f4f4f4;
+    --input-focus-border: #4a90e2;
+    --button-background: #4a90e2;
+    --button-hover: #357abd;
+    --button-active: #2e5f8a;
+    --text-color: #f4f4f4;
+    --error-color: #e57373;
+    --success-color: #81c784;
+    --dropdown-background: #2e2e2e;
+    --dropdown-border: #555;
+    --dropdown-hover: #444;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    background-color: var(--background-color);
+    padding-top: 50px;
+    color: var(--text-color);
+}
+
+#container {
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: var(--container-background);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    display: block;
+    margin: 0 auto 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid var(--input-border);
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input, select {
+    background-color: var(--input-background);
+    color: var(--input-text-color);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--input-focus-border);
+    box-shadow: 0 0 8px rgba(0, 120, 212, 0.3);
+    background-color: #fff;
+    color: var(--input-text-color);
+}
+
+button {
+    background-color: var(--button-background);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: var(--button-hover);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+    background-color: var(--button-active);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+.loading {
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #3498db;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    margin: 20px auto;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#errorMessage,
+#successMessage {
+    margin-top: 10px;
+    color: var(--error-color);
+}
+
+#successMessage {
+    color: var(--success-color);
+}
+
+#ticketSearchContainer {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 10px;
+}
+
+#ticketSearch {
+    padding: 10px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid var(--input-border);
+    font-size: 16px;
+    background-color: var(--input-background);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+#ticketDropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: var(--dropdown-background);
+    border: 1px solid var(--dropdown-border);
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#ticketDropdown .dropdown-item {
+    padding: 15px;
+    cursor: pointer;
+    border-bottom: 1px solid var(--dropdown-border);
+    font-size: 14px;
+}
+
+#ticketDropdown .dropdown-item:last-child {
+    border-bottom: none;
+}
+
+#ticketDropdown .dropdown-item:hover {
+    background-color: var(--dropdown-hover);
+}
+
+.hidden {
+    display: none;
+}
+
+#header {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.icon-button {
+    width: 35px;
+    height: 35px; 
+    border-radius: 8px;
+    background-color: var(--button-background);
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.icon-button:hover {
+    background-color: var(--button-hover);
+}
+
+.icon-button:active {
+    background-color: var(--button-active);
+}
+
+#darkModeToggle {
+    width: 40px;
+    height: 40px;
+    background-color: var(--button-background);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#darkModeToggle:hover {
+    background-color: var(--button-hover);
+}
+
+#darkModeToggle:active {
+    background-color: var(--button-active);
+}
+
+#logoutButton {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+#logoutButton:hover {
+    background-color: #c62828;
+}
+
+#logoutButton:active {
+    background-color: #b71c1c;
+}
+
+.icon-button i {
+    font-size: 18px;
+}
