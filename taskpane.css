@@ -85,7 +85,7 @@ input:focus, select:focus {
     outline: none;
     border-color: var(--input-focus-border);
     box-shadow: 0 0 8px rgba(0, 120, 212, 0.3);
-    background-color: #fff;
+    background-color: var(--input-focus-background);
     color: var(--input-text-color);
 }
 
