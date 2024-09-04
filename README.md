@@ -4,6 +4,13 @@ This product is unofficial and there was no involvement of the HaloPSA team. Be 
 This product was tested in Outlook (Classic) are is not built for the Outlook Mobile app or Web app, feel free to add this functionality and don't forget to share.
 This product was shared because there is no, to my knowledge, add-in made for importing email as notes in tickets and by sharing this I hope people will share there improvements for this add-in.
 
+# Screenshots
+![Outlook-ribbon-button](https://github.com/user-attachments/assets/f40d774c-c384-4a52-8c57-6f95f39a0f05)
+![Login-dark-mode](https://github.com/user-attachments/assets/67da9516-0882-426a-ba23-4623777e4fce)
+![select-ticket-dark-mode](https://github.com/user-attachments/assets/bce0a561-1818-4e41-a2f0-040f197b164b)
+![ticket-selected-dark-mode](https://github.com/user-attachments/assets/f8013f7f-72fc-4d96-9787-5161d4eaa801)
+![selected-ticket-imported-dark-mode](https://github.com/user-attachments/assets/281fd8b1-375b-480e-ba96-bcf284ff1203)
+
 # Requirements
 - HaloPSA Administrator, to create an API key with the correct permissions. Follow the tutorial for more info.
 - Webserver Hosting, the files need to be hosted on a webserver where we need to point the public links in the manifest.xml
