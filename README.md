@@ -21,6 +21,7 @@ This product was shared because there is no, to my knowledge, add-in made for im
 
 # Known issues
 - Inline/Embedded that are downscaled/have a low aspect ratio inside Outlook appear as orginal size in HaloPSA note. If someone gets this fixed, let me know!
+- Not really an issue, but the product was made in Dutch; for example Klant = Customer and Behandelaar = Agent.
 
 # Contact
 If you have any questions feel free to create an issues on this repository.
