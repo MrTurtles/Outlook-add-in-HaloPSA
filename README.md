@@ -27,7 +27,7 @@ This product was shared because there is no, to my knowledge, add-in made for im
 8. Open Outlook, navigate to an email and you should see the Add-in at the right top. Enjoy efficiency!
 
 # Known issues
-- Inline/Embedded that are downscaled/have a low aspect ratio inside Outlook appear as orginal size in HaloPSA note. If someone gets this fixed, let me know!
+- Inline/Embedded images that are downscaled/have a low aspect ratio inside Outlook will appear as orginal size in HaloPSA when importing. If someone gets this fixed, let me know!
 - Not really an issue, but the product was partly made in Dutch; for example Klant = Customer and Behandelaar = Agent.
 
 # Contact
