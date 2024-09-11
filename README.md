@@ -1,8 +1,8 @@
 # Introduction
-This product was made for fun and educational purposes and should be maintained and updated by yourself if you decide to use it, because there is no guarantee this branch will be updated.
-This product is unofficial and there was no involvement of the HaloPSA team. Be aware this could contain bugs and can be reported on the issues tab of this repository, there is no guarantuee of response. 
-This product was tested in Outlook (Classic) are is not built for the Outlook Mobile app or Web app, feel free to add this functionality and don't forget to share.
-This product was shared because there is no, to my knowledge, add-in made for importing email as notes in tickets and by sharing this I hope people will share there improvements for this add-in.
+- This product was made for fun and educational purposes and should be maintained and updated by yourself if you decide to use it, because there is no guarantee this branch will be updated.
+- This product is unofficial and there was no involvement of the HaloPSA team. Be aware this could contain bugs and can be reported on the issues tab of this repository, there is no guarantuee of response. 
+- This product was tested in Outlook (Classic) and is not built for the Outlook Mobile app or Web app, feel free to add this functionality and don't forget to share.
+- This product was shared because there is no, to my knowledge, add-in made for importing email as notes in tickets and by sharing this I hope people will share there improvements for this add-in.
 
 # Screenshots
 ![Outlook-ribbon-button](https://github.com/user-attachments/assets/f40d774c-c384-4a52-8c57-6f95f39a0f05)
