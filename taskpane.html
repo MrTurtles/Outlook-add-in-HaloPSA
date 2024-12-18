@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outlook Add-in for HaloPSA</title>
+    <link rel="stylesheet" href="taskpane.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+    <script src="taskpane.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <button id="darkModeToggle" title="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+            <button id="logoutButton" title="Logout"><i class="fas fa-sign-out-alt"></i></button>
+        </div>
+
+        <div id="loginScreen">
+            <h3>Login</h3>
+            <input type="text" id="username" placeholder="Username" />
+            <input type="password" id="password" placeholder="Password" />
+            <button id="loginButton">Login</button>
+            <div id="loginError" style="color: red;"></div>
+            <div id="loginLoading" class="loading" style="display:none;"></div>
+        </div>
+
+        <div id="mainScreen" style="display:none;">
+            <h3>Select a Ticket</h3>
+            <div id="ticketSearchContainer">
+                <input type="text" id="ticketSearch" placeholder="Search tickets..." />
+                <ul id="ticketDropdown" class="hidden"></ul>
+            </div>
+            <button id="importButton">Import HTML</button>
+            <div id="loading" class="loading" style="display:none;"></div>
+            <div id="successMessage" style="color: green; display:none;">Success!</div>
+            <div id="errorMessage" style="color: red; display:none;">Error!</div>
+        </div>
+    </div>
+</body>
+</html>
